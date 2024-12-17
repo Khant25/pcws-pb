@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Khant Thurein Min, showcasing skills, projects, and ways to connect.">
+    <meta name="author" content="Khant Thurein Min">
+    <title>Khant Thurein Min - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            background: white;
+            color: #007BFF;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            background: #f0f8ff;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 50px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h3 {
+            margin: 15px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .project p {
+            padding: 0 15px 15px;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0056b3;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.8em;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #FFD700;
+        }
+
+        /* Snowfall effect */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 1000;
+            color: white;
+            font-size: 1.5em;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(calc(10vw - 5vw));
+            }
+        }
+
+        /* Index box styles */
+        .project {
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .project h3 {
+            font-size: 1.4em;
+            color: #333;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project p {
+            padding: 15px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khant Thurein Min</h1>
+        <p>Tech Enthusiast | Gamer | Innovator</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Khant Thurein Min, a dedicated tech enthusiast with a passion for coding, gaming, and solving complex problems. Explore my journey and let’s connect!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="portfolio.jpg" alt="Interactive Portfolio Screenshot">
+                <h3>Interactive Portfolio</h3>
+                <p>An elegant showcase of my professional skills and projects.</p>
+            </div>
+            <div class="project">
+                <img src="gaming-tools.jpg" alt="Gaming Tools Screenshot">
+                <h3>Gaming Assistant Tools</h3>
+                <p>Utilities designed to enhance gaming efficiency and strategy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Want to work together or just say hello? Reach out through the form below or connect via social media!</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Khant Thurein Min. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">🔗</a>
+            <a href="#" target="_blank">🐦</a>
+            <a href="#" target="_blank">📧</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Snowfall effect
+        const createSnowflake = () => {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        };
+
+        setInterval(createSnowflake, 100);
+    </script>
+</body>
+</html>
